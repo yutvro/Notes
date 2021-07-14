@@ -3,12 +3,12 @@
 mkdir /mnt/mmcblk2p4/ql && cd /mnt/mmcblk2p4/ql
 curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/docker-compose.yml > docker-compose.yml
 docker-compose up -d
-docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
+docker exec -it qinglong bash -c "$(curl -fsSL https://github.com/qg888/Notes/raw/main/QL/N1/Allinone.sh)"
 ```
 
 ## N1更新`config.sh` `extra.sh` `code.sh` `task_before.sh`
 ```
-docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
+docker exec -it qinglong bash -c "$(curl -fsSL https://github.com/qg888/Notes/raw/main/QL/N1/Allinone.sh)"
 ```
 ### Allinone 脚本功能如下
 - ✅替换原始的 config.sh 文件
@@ -26,20 +26,20 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ## N1单独更新`config.sh`
 ```
 cd /mnt/mmcblk2p4/ql/config
-curl -sL https://git.io/config.sh > config.sh
+curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/config/config.sh > config.sh
 ```
 ## N1单独更新`extra.sh`
 ```
 cd /mnt/mmcblk2p4/ql/config
-curl -sL https://git.io/extra.sh > extra.sh
+curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/config/extra.sh > extra.sh
 ```
 ## N1单独更新`code.sh`
 ```
 cd /mnt/mmcblk2p4/ql/config
-curl -sL https://git.io/code.sh > code.sh
+curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/config/code.sh > code.sh
 ```
 ## N1单独更新`task_before.sh`
 ```
 cd /mnt/mmcblk2p4/ql/config
-curl -sL https://git.io/task_before.sh > task_before.sh
+curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/config/task_before.sh > task_before.sh
 ```

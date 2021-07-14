@@ -1,7 +1,7 @@
 # VPS安装青龙命令
 ```
 mkdir /ql && cd /ql
-curl -sL https://github.com/qg888/Notes/raw/main/VPS/docker-compose.yml > docker-compose.yml
+curl -sL https://github.com/qg888/Notes/raw/main/QL/VPS/docker-compose.yml > docker-compose.yml
 docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```

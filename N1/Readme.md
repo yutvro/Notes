@@ -1,4 +1,4 @@
-# N1创建青龙命令
+# N1安装青龙命令
 ```
 mkdir /mnt/mmcblk2p4/ql && cd /mnt/mmcblk2p4/ql
 curl -sL https://github.com/qg888/Notes/raw/main/N1/docker-compose.yml > docker-compose.yml

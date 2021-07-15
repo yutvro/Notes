@@ -10,6 +10,14 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
+## 或者
+```
+cd /ql/config
+curl -sL https://git.io/config.sh > config.sh
+curl -sL https://git.io/extra.sh > extra.sh
+curl -sL https://git.io/code.sh > code.sh
+curl -sL https://git.io/task_before.sh > task_before.sh
+```
 ### Allinone 脚本功能如下
 - ✅替换原始的 config.sh 文件
 - ✅替换原始的 extra.sh 文件

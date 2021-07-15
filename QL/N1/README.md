@@ -10,6 +10,14 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://github.com/qg888/Notes/ra
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://github.com/qg888/Notes/raw/main/QL/N1/Allinone.sh)"
 ```
+## 或者
+```
+cd /mnt/mmcblk2p4/ql/config
+curl -sL https://git.io/config.sh > config.sh
+curl -sL https://git.io/extra.sh > extra.sh
+curl -sL https://git.io/code.sh > code.sh
+curl -sL https://git.io/task_before.sh > task_before.sh
+```
 ## 说明
 ```
 Allinone 脚本功能如下

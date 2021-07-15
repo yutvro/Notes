@@ -18,6 +18,7 @@ curl -sL https://git.io/extra.sh > extra.sh
 curl -sL https://git.io/code.sh > code.sh
 curl -sL https://git.io/task_before.sh > task_before.sh
 ```
+## 说明
 ```
 Allinone 脚本功能如下
 ✅替换原始的 config.sh 文件

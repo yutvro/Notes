@@ -3,7 +3,8 @@ qinglong:
   container_name: qinglong
   hostname: qinglong
   restart: always
-  network: host
+  ports:
+    - "5700:5700"
   volumes:
     - ./config:/ql/config
     - ./log:/ql/log

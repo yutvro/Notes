@@ -6,7 +6,7 @@ docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
 
-## 运行[Allinone](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Allinone.sh)更新 [config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh) [extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh) [code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh) [task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
+## 运行[Allinone.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Allinone.sh)更新 [config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh) [extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh) [code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh) [task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```

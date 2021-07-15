@@ -6,7 +6,7 @@ docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
 
-## 运行`[Allinone](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Allinone.sh)更新` `[config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)` `[extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)` `[code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)` `[task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)`
+## 运行[Allinone](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Allinone.sh)更新 [config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh) [extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh) [code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh) [task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
@@ -26,22 +26,22 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ### 限制
 - ❗️由于脚本内的所有链接都是 raw，境内机器看缘分使用
 
-## 单独更新`[config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)`
+## 单独更新[config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)
 ```
 cd /ql/config
 curl -sL https://git.io/config.sh > config.sh
 ```
-## 单独更新`[extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)`
+## 单独更新[extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)
 ```
 cd /ql/config
 curl -sL https://git.io/extra.sh > extra.sh
 ```
-## 单独更新`[code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)`
+## 单独更新[code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)
 ```
 cd /ql/config
 curl -sL https://git.io/code.sh > code.sh
 ```
-## 单独更新`[task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)`
+## 单独更新[task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
 ```
 cd /ql/config
 curl -sL https://git.io/task_before.sh > task_before.sh

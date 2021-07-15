@@ -1,4 +1,4 @@
-# Orep安装青龙命令
+# 安装青龙命令
 ```
 mkdir /ql && cd /ql
 curl -sL https://git.io/QL > docker-compose.yml
@@ -6,7 +6,7 @@ docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
 
-## Orep更新`config.sh` `extra.sh` `code.sh` `task_before.sh`
+## 运行`[Allinone](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Allinone.sh)更新` `[config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)` `[extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)` `[code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)` `[task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)`
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ```
@@ -26,22 +26,22 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/Allinone)"
 ### 限制
 - ❗️由于脚本内的所有链接都是 raw，境内机器看缘分使用
 
-## Orep单独更新`config.sh`
+## 单独更新`[config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)`
 ```
 cd /ql/config
 curl -sL https://git.io/config.sh > config.sh
 ```
-## Orep单独更新`extra.sh`
+## 单独更新`[extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)`
 ```
 cd /ql/config
 curl -sL https://git.io/extra.sh > extra.sh
 ```
-## Orep单独更新`code.sh`
+## 单独更新`[code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)`
 ```
 cd /ql/config
 curl -sL https://git.io/code.sh > code.sh
 ```
-## Orep单独更新`task_before.sh`
+## 单独更新`[task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)`
 ```
 cd /ql/config
 curl -sL https://git.io/task_before.sh > task_before.sh

@@ -3,12 +3,12 @@
 mkdir /mnt/mmcblk2p4/ql && cd /mnt/mmcblk2p4/ql
 curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/docker-compose.yml > docker-compose.yml
 docker-compose up -d
-docker exec -it qinglong bash -c "$(curl -fsSL https://github.com/qg888/Notes/raw/main/QL/N1/1custom.sh)"
+docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 
-## N1运行[1custom.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/1custom.sh)更新[config.sh](https://raw.githubusercontent.com/qg888/Notes/main/QL/N1/config/config.sample.sh) [extra.sh](https://raw.githubusercontent.com/qg888/Notes/main/QL/N1/config/extra.sh) [code.sh](https://raw.githubusercontent.com/qg888/Notes/main/QL/N1/config/code.sh) [task_before.sh](https://raw.githubusercontent.com/qg888/Notes/main/QL/N1/config/task_before.sh)
+## N1运行  [1custom.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/1custom.sh)  更新  [config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)  [extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)  [code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)  [task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
 ```
-docker exec -it qinglong bash -c "$(curl -fsSL https://github.com/qg888/Notes/raw/main/QL/N1/1custom.sh)"
+docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 
 ## 说明

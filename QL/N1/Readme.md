@@ -1,8 +1,30 @@
 # N1安装青龙命令
+## 方法一
 ```
 mkdir /mnt/mmcblk2p4/ql && cd /mnt/mmcblk2p4/ql
 curl -sL https://github.com/qg888/Notes/raw/main/QL/N1/docker-compose.yml > docker-compose.yml
 docker-compose up -d
+docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
+```
+## 方法二
+## ①
+```
+docker run -dit \
+   -v /mnt/mmcblk2p4/ql/config:/ql/config \
+   -v /mnt/mmcblk2p4/ql/log:/ql/log \
+   -v /mnt/mmcblk2p4/ql/db:/ql/db \
+   -v /mnt/mmcblk2p4/ql/scripts:/ql/scripts \
+   -v /mnt/mmcblk2p4/ql/repo:/ql/repo \
+   -v /mnt/mmcblk2p4/ql/raw:/ql/raw \
+   -v /mnt/mmcblk2p4/ql/jbot:/ql/jbot \
+   --network host \
+   --name qinglong \
+   --hostname qinglong \
+   --restart always \
+   whyour/qinglong:latest
+```
+## ②
+```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 

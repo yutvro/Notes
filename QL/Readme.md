@@ -59,7 +59,7 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 
-### 说明
+#### 说明
 ```
 1custom 脚本功能如下
 ✅自由选择替换原始的 config.sh 文件

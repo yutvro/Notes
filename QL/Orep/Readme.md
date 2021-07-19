@@ -1,10 +1,30 @@
 # VPS安装青龙命令
+## 方法一
 ```
 mkdir /ql && cd /ql
 curl -sL https://git.io/QL > docker-compose.yml
 docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
+## 方法二
+1.
+```
+docker run -dit \
+   -v $PWD/ql/config:/ql/config \
+   -v $PWD/ql/db:/ql/db \
+   -v $PWD/ql/repo:/ql/repo \
+   -v $PWD/ql/raw:/ql/raw \
+   -v $PWD/ql/scripts:/ql/scripts \
+   -v $PWD/ql/log:/ql/log \
+   -v $PWD/ql/jbot:/ql/jbot \
+   -p 5700:5700 \
+   --name qinglong \
+   --hostname qinglong \
+   --restart always \
+   whyour/qinglong:latest
+```
+2.
+docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 
 ## VPS运行  [1custom.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/1custom.sh)  更新[config.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Conf/Qinglong/config.sample.sh)|[extra.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Tasks/qlrepo/extra.sh)|[code.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/code.sh)|[task_before.sh](https://raw.githubusercontent.com/Oreomeow/VIP/main/Scripts/sh/Helpcode2.8/task_before.sh)
 ```

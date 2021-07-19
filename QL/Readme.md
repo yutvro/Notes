@@ -1,13 +1,13 @@
 # 安装青龙命令
 ## 方法一
-### N1
+- N1
 ```
 mkdir /mnt/mmcblk2p4/ql && cd /mnt/mmcblk2p4/ql
 curl -sL https://github.com/qg888/Notes/raw/main/QL/docker-compose.yml > docker-compose.yml
 docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
-### VPS
+- VPS
 ```
 mkdir /ql && cd /ql
 curl -sL https://git.io/QL > docker-compose.yml
@@ -16,7 +16,7 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 ## 方法二
 ## ①
-### N1
+- N1
 ```
 docker run -dit \
    -v /mnt/mmcblk2p4/ql/config:/ql/config \
@@ -32,7 +32,7 @@ docker run -dit \
    --restart always \
    whyour/qinglong:latest
 ```
-### VPS
+- VPS
 ```
 docker run -dit \
    -v $PWD/ql/config:/ql/config \
@@ -49,7 +49,7 @@ docker run -dit \
    whyour/qinglong:latest
 ```
 ## ②
-### N1/VPS
+- N1/VPS
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
@@ -59,7 +59,7 @@ docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 
-## 说明
+- 说明
 ```
 1custom 脚本功能如下
 ✅自由选择替换原始的 config.sh 文件

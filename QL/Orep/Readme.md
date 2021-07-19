@@ -7,7 +7,7 @@ docker-compose up -d
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```
 ## 方法二
-#### 1️⃣
+1️⃣
 ```
 docker run -dit \
    -v $PWD/ql/config:/ql/config \
@@ -23,7 +23,7 @@ docker run -dit \
    --restart always \
    whyour/qinglong:latest
 ```
-#### 2️⃣
+2️⃣
 ```
 docker exec -it qinglong bash -c "$(curl -fsSL https://git.io/1custom)"
 ```

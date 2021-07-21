@@ -3,7 +3,7 @@ qinglong:
   container_name: qinglong
   hostname: qinglong
   restart: always
-  network: host
+  net: host
   volumes:
     - ./config:/ql/config
     - ./log:/ql/log

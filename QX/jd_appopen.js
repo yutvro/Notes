@@ -13,7 +13,8 @@ hostname = draw.jdfcloud.com
 const $ = new Env("app_open");
 
 // 修改为自己的ninja地址
-const ninja = 'ninja.url';
+const ninja = 'NinjaURL';
+let NinjaURL = $.getdata('ninja.url');
 
 
 async function updateCK(timeout = 0) {

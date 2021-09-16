@@ -7,7 +7,7 @@ hostname = draw.jdfcloud.com
 
 [rewrite_local]
 # jd_appopen
-^https:\/\/api\.m\.jd\.com\/openUpgrade url script-request-header https://github.com/qg888/Notes/blob/main/QX/jd_appopen.js
+^https:\/\/api\.m\.jd\.com\/openUpgrade url script-request-header https://raw.githubusercontent.com/qg888/Notes/main/QX/jd_appopen.js
 
 */
 const $ = new Env("app_open");

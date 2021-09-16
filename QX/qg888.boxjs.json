@@ -1,0 +1,28 @@
+{
+  "id": "qg888.app.sub",
+  "name": "qg888自用应用订阅",
+  "author": "@qg888",
+  "icon": "https://avatars.githubusercontent.com/u/85546951?v=4",
+  "repo": "https://github.com/qg888/Notes",
+  "apps": [
+    {
+      "id": "ninja",
+      "name": "京东ck同步ninja",
+      "keys": ["@ninja.url"],
+      "settings": [
+        {
+          "id": "@ninja.url",
+          "name": "ninja登陆的域名或IP:端口号",
+          "val": "",
+          "type": "text",
+          "placeholder": "ninja登陆的域名或IP:端口号"
+        }
+      ],
+      "icons": [
+        "https://raw.githubusercontent.com/qg888/Notes/main/QX/icon/jd_appopen.png",
+        "https://raw.githubusercontent.com/qg888/Notes/main/QX/icon/jd_appopen.png"
+      ],
+      "author": "@qg888"
+    }
+  ]
+}

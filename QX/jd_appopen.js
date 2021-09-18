@@ -15,11 +15,10 @@ const $ = new Env("app_open");
 // 修改为自己的ninja地址
 const ninja = 'ninja.url';
 let ninja.url;
-
 if ($.env.isNode) {
-  ninja = $.read(ninja.url) || [];
+  ninja = $.read(ninja.url) || ;
 } else {
-  ninja = JSON.parse($.read(ninja.url) || '[]');
+  ninja = JSON.parse($.read(ninja.url) || '');
 }
 
 

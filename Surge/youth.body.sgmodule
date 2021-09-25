@@ -1,0 +1,10 @@
+#!name= 中青 body 获取
+#!desc= 中青数据，阅读抓取（文章看完可以抓两条），视频（需要看完）时长（文章和视频都需要看完，基于之前文章和视频自己考虑抓不抓）
+
+[Script]
+# > 中青 body 获取
+中青body获取 = type=http-request,pattern= https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json ,script-path= https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js, requires-body=true
+中青body获取 = type=http-request,pattern= https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json ,script-path= https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% ios.baertt.com

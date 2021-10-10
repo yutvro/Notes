@@ -1,0 +1,13 @@
+#!name= Youth Rewrite
+#!desc= 中青body获取
+#!system=ios
+
+[Script]
+#中青看点阅读 = type=cron,cronexp=10 */2 * * *,script-path=https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js,wake-system=1,timeout=3600,,script-update-interval=0
+
+#中青看点阅读 = type=https:\/\/ios\.baertt\.com\/v5\/article\/info\/get\.json,script-path=https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js
+
+#中青看点阅读 = type=https:\/\/ios\.baertt\.com\/v5\/user\/stay\.json,script-path=https://raw.githubusercontent.com/GoodHolidays/Scripts/master/Task/Youth_Read.js, requires-body=true
+
+[MITM]
+hostname = %APPEND% ios.baertt.com

@@ -136,7 +136,7 @@ check_Ninja_normal() {
     i=0
     while ((i <= 0)); do
         echo "扫描 Ninja 是否在线"
-        if [ "$(pgrep -f ninja)" -ne 0 ]; then
+        if [ -z "$(pgrep -f ninja)" ]; then
             i=0
             echo "$NOWTIME"" 扫描结束！Ninja 掉线了不用担心马上重启！"
             cd /ql || exit
@@ -144,7 +144,7 @@ check_Ninja_normal() {
             cd /ql/ninja/backend || exit
             pnpm install
             pm2 start
-            if [ "$(pgrep -f Daemon)" -ne 1 ]; then
+            if [ -n "$(pgrep -f Daemon)" ]; then
                 i=1
                 echo "$NOWTIME"" Ninja 重启完成！"
                 curl "https://api.telegram.org/bot$TG_BOT_TOKEN/sendMessage?chat_id=$TG_USER_ID&text=Ninja 已重启完成"
